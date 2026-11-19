@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="برنامج محاسبة متكامل يعمل بدون إنترنت — قيود، فواتير، مخزون، تقارير مالية" />
+  <title>المحاسب | نظام محاسبة متكامل</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='70' font-size='56' text-anchor='middle' fill='white' font-family='Arial'%3E%D9%85%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=3" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo">م</div>
+        <div class="brand-text">
+          <strong>المحاسب</strong>
+          <span>نظام محاسبة متكامل</span>
+        </div>
+      </div>
+      <nav class="nav" id="nav" aria-label="القائمة الرئيسية"></nav>
+      <div class="sidebar-foot">
+        <span class="dot"></span>
+        <span>البيانات محفوظة على جهازك</span>
+      </div>
+    </aside>
+    <div class="sidebar-scrim" id="scrim"></div>
+
+    <div class="content">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="فتح القائمة">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <div class="page-head">
+          <h1 id="page-title">لوحة التحكم</h1>
+          <p id="page-sub">نظرة عامة على الأداء المالي</p>
+        </div>
+        <div class="topbar-actions">
+          <span class="chip" id="today-chip"></span>
+          <button class="icon-btn" id="theme-btn" title="تبديل الوضع الليلي" aria-label="تبديل الوضع الليلي">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          </button>
+        </div>
+      </header>
+      <main class="view" id="view"></main>
+    </div>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+  <div id="print-area"></div>
+
+  <noscript>
+    <div style="padding:40px;text-align:center;font-family:sans-serif">
+      هذا التطبيق يحتاج إلى تشغيل JavaScript في المتصفح.
+    </div>
+  </noscript>
+
+  <script src="assets/js/utils.js?v=3"></script>
+  <script src="assets/js/db.js?v=3"></script>
+  <script src="assets/js/charts.js?v=3"></script>
+  <script src="assets/js/accounting.js?v=3"></script>
+  <script src="assets/js/views-core.js?v=3"></script>
+  <script src="assets/js/views-sales.js?v=3"></script>
+  <script src="assets/js/views-treasury.js?v=3"></script>
+  <script src="assets/js/views-reports.js?v=3"></script>
+  <script src="assets/js/app.js?v=3"></script>
+</body>
+</html>
